@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Lyrically Sound</title>
+    <title>Andrea's Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -11,7 +11,9 @@
 
 <body>
     <div class="card">
-        <div class="card-body text-center bg-dark text-white">Lyrically Sound</div>
+        <div class="card-body text-center bg-dark text-white">
+            Weather Dashboard
+        </div>
     </div>
 
     <div class="container">
@@ -20,21 +22,42 @@
                 <div class="card-body text-center">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body bg-light">
-                            <h6 class="card-subtitle mb-2 text-muted">Search For A Song</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Search For A City</h6>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control searchInput" placeholder="Enter Song Name"
+                                <input type="text" class="form-control searchInput" placeholder="Enter City Name"
                                     aria-label="Recipient's username" aria-describedby="button-addon2">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary bg-primary searchButton" type="button"
                                         id="searchButton"><i class="fas fa-search"></i></button>
                                 </div>
                             </div>
-                            <ul class="list-group"></ul>
+
+                            <ul class="list-group">
+
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="col mt-4 mr-5">
+                <div class="card currentForecast pb-2 pt-1">
+                    <h5 class="card-title mt-2 text-center">Current Forecast</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-4">
+                    <div class="card pb-5 fiveDayForecast pl-5">
+                        <h5 class="card-title mt-2 mr-5">5-Day Forecast</h5>
+                        <div class="row">
+                            <div class="col fiveDayOne">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -43,7 +66,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
+    <script src="testscriptwiki.js"></script>
 
 </body>
 

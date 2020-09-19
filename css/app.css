@@ -1,0 +1,27 @@
+.sticky-topbar {
+    width: 100%;
+  }
+  
+.hero-section {
+    background: url("https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?cs=srgb&dl=pexels-picjumbocom-196652.jpg&fm=jpg") 50% no-repeat;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .hero-section .hero-section-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+  }
+  
+  
+  

@@ -26,6 +26,7 @@ $("#searchButton").click(function() {
         console.log(searchHistory)
         console.log(typeof searchHistory)
         searchHistory = JSON.parse(searchHistory)
+        //add api and ajax
         searchHistory.push(search)
         //string
         searchHistory = JSON.stringify(searchHistory)
@@ -34,20 +35,36 @@ $("#searchButton").click(function() {
         searchHistory = JSON.stringify([search]);
     }
     localStorage.setItem("searchHistory", searchHistory)
+
+var apiKey = "bdd1f87bcdmshb2ad5b0221de40cp1060d5jsn3d7c45fb4c54";
+var urlCurrent = "https://deezerdevs-deezer.p.rapidapi.com/search?q=" + search + "&Appid=" + apiKey + "&units=imperial"
+$.ajax({
+    url: urlCurrent,
+    method: "GET"
+    })
+    .then(function (response) {
+           //definitely use this for UV!!!!;
+        console.log(urlCurrent)
+        console.log(response)
 })
 
+//testing new code for API
+
+
+    })
+
 //api call
-var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=taylor+swift",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-        "x-rapidapi-key": "253f99e5af7d138f8a094111f9aa1ff5"
+//var settings = {
+	//"async": true,
+	//"crossDomain": true,
+	//"url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=taylor+swift",
+	//"method": "GET",
+	//"headers": {
+		//"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+        //"x-rapidapi-key": "bdd1f87bcdmshb2ad5b0221de40cp1060d5jsn3d7c45fb4c54"
     //$(".humidity").text("Humidity: " + response.list[i].main.humidity + "%");
-	}
-}
+	//}
+//}
 
 $.ajax(settings).done(function (response) {
 	console.log(response);

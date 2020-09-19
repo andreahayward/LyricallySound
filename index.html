@@ -1,50 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyrically Sound</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
 
-<body>
-    <div class="card">
-        <div class="card-body text-center bg-dark text-white">Lyrically Sound</div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card-body text-center">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body bg-light">
-                            <h6 class="card-subtitle mb-2 text-muted">Search For A Song</h6>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control searchInput" placeholder="Enter Song Name"
-                                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary bg-primary searchButton" type="button"
-                                        id="searchButton"><i class="fas fa-search"></i></button>
-                                </div>
-                            </div>
-                            <ul class="list-group"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+    
+    <div class="top-bar-container" data-sticky-container>
+      <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">Lyrically Sound</li>
+              <li class="has-submenu">
+                <a href="#">One</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><input type="search" placeholder="Search"></li>
+              <li><button type="button" class="button">Search</button></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+    
+
+    <div class="hero-section">
+      <div class="hero-section-text">
+        <h1>Lyrically Sound</h1>
+        <h5>Your music, your way!</h5>
+          </div>
     </div>
+  
 
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
-
-</body>
-
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
+>>>>>>> 88bba19ba33d31af6ff284835369e55e40bf0204

@@ -15,9 +15,9 @@ for (var i = 0; i < searchHistory.length; i++) {
 }}
 
 //musicxmatch
-$("#searchButton").click(function() {
+$("#Search").click(function() {
     //getting value from search box
-    var search = $(".searchInput").val()
+    var search = $(".search").val()
     console.log(search);
     //string
     var searchHistory = localStorage.getItem("searchHistory");
@@ -34,9 +34,24 @@ $("#searchButton").click(function() {
         searchHistory = JSON.stringify([search]);
     }
     localStorage.setItem("searchHistory", searchHistory)
-})
+   //api call 
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://deezerdevs-deezer.p.rapidapi.com/search?q" + search,
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+            "x-rapidapi-key": "253f99e5af7d138f8a094111f9aa1ff5"
+        //$(".humidity").text("Humidity: " + response.list[i].main.humidity + "%");
+        }
+    }
+    
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+});
 
-//api call
+//api call - put in function (event listener) move this to searchbutton.click function. take search var q= + searchvar. make the URL dynamic - pass them the dynamic URL
 var settings = {
 	"async": true,
 	"crossDomain": true,

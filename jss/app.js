@@ -1,5 +1,5 @@
 $(document).foundation()
-var searchButton = $("#searchButton");
+var searchButton = $("#button");
 var deezerAPI = "253f99e5af7d138f8a094111f9aa1ff5";
 var music;
 
@@ -15,8 +15,8 @@ for (var i = 0; i < searchHistory.length; i++) {
     console.log(music)
 }}
 
-//musicxmatch
-$("#Search").click(function() {
+//deezer search
+$("#button").click(function() {
     //getting value from search box
     var search = $(".search").val()
     console.log(search);
@@ -35,11 +35,11 @@ $("#Search").click(function() {
         searchHistory = JSON.stringify([search]);
     }
     localStorage.setItem("searchHistory", searchHistory)
-   //api call 
+   //api call ,
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://deezerdevs-deezer.p.rapidapi.com/search?q" + search,
+        "url": "https://deezerdevs-deezer.p.rapidapi.com/search?q=" + search,
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",

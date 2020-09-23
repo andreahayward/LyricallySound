@@ -1,19 +1,23 @@
 //$(document).foundation()
 var searchButton = $("#button");
-var deezerAPI = "253f99e5af7d138f8a094111f9aa1ff5";
+//var deezerAPI = "253f99e5af7d138f8a094111f9aa1ff5";
 var music;
 
-//music search history display - commenting this out for now as there isnt a display space on the HTML yet
-/*var searchHistory = localStorage.getItem("searchHistory");
-searchHistory = JSON.parse(searchHistory)
-if (searchHistory) {
-for (var i = 0; i < searchHistory.length; i++) {
-
-    userSearch = searchHistory[i];
-    var musicSearch = $(".list-group").addClass("list-group-item");
-    musicSearch.append("<li>" + music + "</li>");
-    //console.log(music)
-}}*/
+// this is a function to control when local storage gets displayed
+function displaySearch() {
+    //music search history display - commenting this out for now as there isnt a display space on the HTML yet
+    var searchHistory = localStorage.getItem("searchHistory");
+    searchHistory = JSON.parse(searchHistory)
+    if (searchHistory) {
+    for (var i = 0; i < searchHistory.length; i++) {
+    
+        music = searchHistory[i];
+        var musicSearch = $(".list-group").addClass("list-group-item");
+        musicSearch.append("<li>" + music + "</li>");
+        //console.log(music)
+    }}
+}
+displaySearch();
 
 //deezer search, makes the API call, saves to local storage.
 $(".button").click(function() {
@@ -49,6 +53,8 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-	console.log(response);
+    console.log(response);
 });
+var musicSearch = $(".list-group").addClass("list-group-item");
+        musicSearch.append("<li>" + search + "</li>");
 });

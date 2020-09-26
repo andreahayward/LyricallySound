@@ -54,7 +54,11 @@ var genius = {
 }
 
 $.ajax(genius).done(function (response) {
-	console.log(response);
+    console.log("here!!");
+    console.log(response);
+    // image
+    //$(".thumbnail").append(response.hits[0].result.header_image_url);
+    $("#imgtest").attr("src",response.response.hits[0].result.header_image_url);
 });
 
 

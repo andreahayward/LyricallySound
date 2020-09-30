@@ -1,3 +1,5 @@
+Deployed Project Link: https://andreahayward.github.io/LyricallySound/
+
 ## ProjectOne
 Team Codename:
 MusicMasters
@@ -17,4 +19,6 @@ AS A user
 I WANT to be able to search on an artist
 SO THAT I can see their top 5 songs returned to me and,
 SO THEN I can choose a song I want to listen to.
+
+![image](https://user-images.githubusercontent.com/67828728/94630140-d5c6fa00-0292-11eb-81c4-d5d895736c5a.png)
 

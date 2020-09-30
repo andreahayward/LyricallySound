@@ -1,22 +1,20 @@
-ProjectOne
+## ProjectOne
 Team Codename:
-CAJ
+MusicMasters
 
-Team Members:
-
-Cedrick Madden
+## Team Members:
 Andrea Hayward
 James Nicholson
 
-Project Title:
-
+## Project Title:
 Lyrically Sound
 
-Project Descriptions:
+## Project Descriptions:
+Website where upon the user enters a band name the site will output an image of the artist's album art as well as the top 5 song indexUser story:
 
-Website where upon the user enters a band name the site will output images of the band, song index, media player, and lyrics.
+## USER STORY:
+AS A user
+I WANT to be able to search on an artist
+SO THAT I can see their top 5 songs returned to me and,
+SO THEN I can choose a song I want to listen to.
 
-User story:
-
-When a user wants to listen to music from a particular band this site will bring up a media player and additional information for the artist 
-including lists of songs, images, and lyrics.
